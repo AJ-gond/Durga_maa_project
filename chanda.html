@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chanda Details | Shree Shree Durga Puja</title>
+
+    <link rel="stylesheet" href="chanda.css">
+     <link rel="stylesheet" media="screen and (max-width:1140px)"
+            href="reponsiveChanda.css" type="text/css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="chanda-hero">
+
+            <span class="chanda-small-title">
+                 गाँव का पूजा • आपका योगदान 
+            </span>
+
+            <h1>
+                CHANDA <span>DETAILS</span>
+            </h1>
+
+            <div class="chanda-line"></div>
+
+            <p>
+               हमारे गाँव के दुर्गा पूजा को सफल बनाने में आपका जो योगदान है,
+                उसके लिए आप लोगों का बहुत-बहुत धन्यवाद।
+            </p>
+
+            <a href="index.html" class="back-btn">
+                ← Back to Home
+            </a>
+
+        </section>
+
+
+        <!-- =========================
+             SUMMARY
+        ========================== -->
+
+        <section class="chanda-summary">
+
+            <div class="summary-card">
+
+                <span>₹</span>
+
+                <h2 id="totalAmount">
+                    ₹0
+                </h2>
+
+                <p>
+                    Total Chanda
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <span>♙</span>
+
+                <h2 id="totalMembers">
+                    0
+                </h2>
+
+                <p>
+                    Total Contributors
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <span>✓</span>
+
+                <h2 id="paidMembers">
+                    0
+                </h2>
+
+                <p>
+                    Paid
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <span>◷</span>
+
+                <h2 id="pendingMembers">
+                    0
+                </h2>
+
+                <p>
+                    Pending
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTRIBUTORS
+        ========================== -->
+
+        <section class="contributors-section">
+
+
+            <div class="section-heading">
+
+                <span>
+                    OUR SUPPORTERS
+                </span>
+
+                <h2>
+                    Chanda <strong>Contributors</strong>
+                </h2>
+
+                <div class="chanda-line"></div>
+
+                <p>
+                    Maa Durga ke utsav mein sahyog dene wale hamare
+                    sabhi sammaanit sahyogkarta.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="chanda-tools">
+
+                <input
+                    type="search"
+                    id="searchContributor"
+                    placeholder="Search contributor..."
+                >
+
+            </div>
+
+
+            <!-- CARDS JS SE AAYENGE -->
+
+            <div
+                id="contributorsGrid"
+                class="contributors-grid"
+            ></div>
+
+
+            <p
+                id="noResult"
+                class="no-result"
+            >
+                Koi contributor nahi mila.
+            </p>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="chanda-footer">
+
+        <h2>
+            Jai Maa Durga
+        </h2>
+
+        <p>
+            श्री दुर्गा पूजा सेवा समिति 
+        </p>
+
+    </footer>
+
+
+    <script src="chanda.js"></script>
+
+</body>
+
+</html>

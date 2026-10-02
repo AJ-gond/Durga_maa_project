@@ -1,0 +1,460 @@
+/* =========================
+   CHANDA PAGE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background: #F7F5EF;
+
+    color: #202A2E;
+
+    font-family: "Cormorant Garamond", serif;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.chanda-hero {
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 75px 20px 45px;
+}
+
+
+.chanda-small-title {
+    color: #B66A4C;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.chanda-hero h1 {
+    margin: 10px 0;
+
+    color: #202A2E;
+
+    font-size: clamp(42px, 5vw, 65px);
+
+    line-height: 1;
+}
+
+
+.chanda-hero h1 span {
+    color: #8D1717;
+}
+
+
+.chanda-hero p {
+    max-width: 600px;
+
+    margin: 20px auto;
+
+    color: #668A86;
+
+    font-size: 19px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   DECORATIVE LINE
+========================= */
+
+.chanda-line {
+    position: relative;
+
+    width: 110px;
+
+    height: 1px;
+
+    margin: 18px auto;
+
+    background: #B66A4C;
+}
+
+
+.chanda-line::before,
+.chanda-line::after {
+    content: "◆";
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #B66A4C;
+
+    font-size: 7px;
+}
+
+
+.chanda-line::before {
+    left: -12px;
+}
+
+
+.chanda-line::after {
+    right: -12px;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-btn {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 9px 22px;
+
+    color: #FFFDF8;
+
+    background: #8D1717;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    transition:
+        background .25s ease,
+        transform .25s ease;
+}
+
+
+.back-btn:hover {
+    background: #6F0F0F;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.chanda-summary {
+    max-width: 1100px;
+
+    margin: 0 auto 65px;
+
+    padding: 0 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+.summary-card {
+    text-align: center;
+
+    padding: 24px 15px;
+
+    background: #FFFDF8;
+
+    border: 1px solid rgba(182, 106, 76, .25);
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(60, 30, 10, .06);
+}
+
+
+.summary-card > span {
+    display: block;
+
+    color: #8D1717;
+
+    font-size: 25px;
+}
+
+
+.summary-card h2 {
+    margin: 5px 0 0;
+
+    color: #8D1717;
+
+    font-size: 25px;
+
+    font-family: normal;
+}
+
+
+.summary-card p {
+    margin: 3px 0 0;
+
+    color: #668A86;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   CONTRIBUTORS SECTION
+========================= */
+
+.contributors-section {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 0 20px 80px;
+}
+
+
+.section-heading {
+    text-align: center;
+}
+
+
+.section-heading > span {
+    color: #B66A4C;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.section-heading h2 {
+    margin: 7px 0;
+
+    color: #202A2E;
+
+    font-size: clamp(38px, 4vw, 52px);
+}
+
+
+.section-heading h2 strong {
+    color: #8D1717;
+}
+
+
+.section-heading p {
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #668A86;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.chanda-tools {
+    display: flex;
+
+    justify-content: center;
+
+    margin: 35px 0;
+}
+
+
+.chanda-tools input {
+    width: min(500px, 100%);
+
+    padding: 13px 18px;
+
+    border: 1px solid rgba(182, 106, 76, .35);
+
+    border-radius: 30px;
+
+    outline: none;
+
+    background: #FFFDF8;
+
+    color: #202A2E;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 17px;
+
+    transition: .25s ease;
+}
+
+
+.chanda-tools input:focus {
+    border-color: #8D1717;
+
+    box-shadow: 0 0 0 3px rgba(141, 23, 23, .08);
+}
+
+
+/* =========================
+   CONTRIBUTORS GRID
+========================= */
+
+.contributors-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================
+   CONTRIBUTOR CARD
+========================= */
+
+.contributor-card {
+    padding: 22px;
+
+    background: #FFFDF8;
+
+    border: 1px solid rgba(182, 106, 76, .22);
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(60, 30, 10, .06);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.contributor-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 28px rgba(60, 30, 10, .12);
+}
+
+
+.contributor-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
+.contributor-name {
+    margin: 0;
+
+    color: #202A2E;
+
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+
+.contributor-amount {
+    color: #8D1717;
+
+    font-size: 23px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.contributor-status {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 4px 12px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.status-paid {
+    color: #285B58;
+
+    background: #E9EFEB;
+}
+
+
+.status-pending {
+    color: #8D1717;
+
+    background: #F5E3DF;
+}
+
+
+/* =========================
+   NO RESULT
+========================= */
+
+.no-result {
+    display: none;
+
+    text-align: center;
+
+    margin-top: 30px;
+
+    color: #668A86;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.chanda-footer {
+    text-align: center;
+
+    padding: 35px 20px;
+
+    background: #6F0F0F;
+
+    color: #FFFDF8;
+}
+
+
+.chanda-footer h2 {
+    margin: 0;
+
+    color: #D8C28F;
+
+    font-size: 32px;
+}
+
+
+.chanda-footer p {
+    margin: 5px 0 0;
+
+    font-size: 17px;
+}

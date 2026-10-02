@@ -1,0 +1,85 @@
+/* =========================
+   CHANDA MOBILE
+========================= */
+
+.chanda-hero {
+    padding: 50px 18px 35px;
+}
+
+
+.chanda-hero h1 {
+    font-size: 42px;
+}
+
+
+
+.chanda-hero p {
+    font-size: 17px;
+}
+
+
+.chanda-summary {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    padding: 0 15px;
+}
+
+
+.summary-card {
+    padding: 20px 10px;
+}
+
+
+.summary-card h2 {
+    font-size: 20px;
+}
+
+
+.summary-card p {
+    font-size: 15px;
+}
+
+
+.contributors-section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.section-heading h2 {
+    font-size: 38px;
+}
+
+
+.section-heading p {
+    font-size: 17px;
+}
+
+
+.contributors-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+}
+
+
+.contributor-card {
+    padding: 18px;
+}
+
+
+.contributor-name {
+    font-size: 20px;
+}
+
+
+.contributor-amount {
+    font-size: 21px;
+}
+
+
+.chanda-footer {
+    padding: 30px 15px;
+}
